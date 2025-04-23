@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+  <h1>WELCOME , <%= user.username %>!</h1>
+  
+  <form action="/logout" method="POST">
+      <p><strong>ID:</strong> <%= user.id %></p>
+      <p><strong>Email:</strong> <%= user.email %></p>
+    <button type="submit">Logout</button>
+  </form>
+</body>
+</html>
